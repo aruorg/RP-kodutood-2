@@ -1,0 +1,73 @@
+.page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 20% 20%, #2a1750 0%, transparent 30%),
+    radial-gradient(circle at 80% 80%, #102c4a 0%, transparent 30%),
+    #0b0b12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.main {
+  width: 100%;
+  max-width: 700px;
+  min-height: 550px;
+  padding: 60px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.4);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  text-align: center;
+}
+
+.main h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.1;
+  letter-spacing: -2px;
+
+  background: #ffffff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.main > p {
+  max-width: 500px;
+  color: #a7a7b5;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.main > a {
+  padding: 10px 20px;
+  border: 1px solid #7c5cff;
+  border-radius: 10px;
+  color: #c9bcff;
+  transition: 0.2s ease;
+}
+
+.main > a:hover {
+  background: #7c5cff;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(124, 92, 255, 0.3);
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 40px 25px;
+  }
+
+  .main h1 {
+    letter-spacing: -1px;
+  }
+}
